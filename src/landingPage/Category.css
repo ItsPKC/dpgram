@@ -1,0 +1,13 @@
+.category-container {
+  min-height: calc(100vh - 105px);
+}
+
+#category-icon-container {
+  /* background: red; */
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 15px;
+  justify-content: center;
+}

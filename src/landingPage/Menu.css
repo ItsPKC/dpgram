@@ -1,0 +1,224 @@
+/* .filter-button {
+  float: right;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-style: italic;
+  background-color: red;
+  padding: 1px 8px 1px 15px;
+  margin: 2px 0 4px 10px;
+  color: #fff;
+  border: 2px solid white;
+  outline: none;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.filter-button:hover {
+  background: coral;
+  cursor: pointer;
+} */
+
+.filter {
+  /*above line is used to hide or unhide popUp*/
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  /* top: 0; */
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-content {
+  display: flex;
+  background-color: rgba(0, 255, 255, 1);
+  /* background-color: rgba(0, 255, 0, 0.5); */
+  margin: 0 0 0 auto;
+  /*above line is used to setUp margin*/
+  min-height: 100%;
+  width: 250px;
+  /* box-shadow: 0 5px 8px 0 rgba(145, 137, 137, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17); */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  animation-name: modalopen;
+  animation-duration: 0.5s;
+}
+
+.filter-header {
+  height: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Segoe UI";
+  /* padding: 0 10px; */
+  color: #fff;
+  text-align: center;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+}
+
+.filter-header-content {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Segoe UI";
+}
+
+.cancelFilter {
+  display: block;
+  float: right;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  /* // 4px inbuilt text padding + 9px additional padding */
+  padding: 0 0 0 1px;
+  margin: 7px 7.5px 7px 7.5px;
+  border-radius: 5px;
+}
+
+.cancelFilter:hover,
+.cancelFilter:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu-logo {
+  margin: 40px;
+  padding: 5px;
+  width: 160px;
+  height: 160px;
+  /* animation: menu-logo-spin infinite 1s alternate linear; */
+  background-color: black;
+  border-radius: 105px;
+}
+/* @keyframes menu-logo-spin {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+} */
+
+.filter-body {
+  /* display: block; */
+  height: calc(100%);
+  margin-bottom: 100px;
+}
+
+.menu-content {
+  display: block;
+  /* 10+10 px padding deducted */
+  width: 230px;
+  padding: 15px 10px;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-family: "Segoe UI";
+  color: #000;
+  background: white;
+  outline: none;
+}
+
+/*start of model content*/
+
+.down-arrow-in-dropdown {
+  margin-right: 15px;
+  float: right;
+}
+
+/* Style the sidenav links and the dropdown button */
+
+/* .filter-body a,
+.dropdown-btn {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Segoe UI";
+  color: #000;
+  display: block;
+  border: none;
+  background: white;
+  width: 250px;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  padding: 12px 10px 8px 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+} */
+
+.dropdown-btn {
+  width: 100%;
+  /*only width is different from normal (.filter-body > a)*/
+}
+
+.filter-body > .dropdown-container > a {
+  border-left: 15px solid #f2f3f4;
+  /*This border is used as an alter-native of padding because 
+        we have to define class in padding case */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+  display: block;
+  background-color: #f2f3f4;
+  box-shadow: 6px 0 4px 4px red;
+}
+
+/* On mouse-over */
+
+.filter-body a:hover,
+.dropdown-btn:hover {
+  color: #f00;
+}
+
+/* Add an active class to the active dropdown button */
+
+.active {
+  background-color: red;
+  /*This border is used as an alter-native of padding because 
+        we have to define class in padding case */
+  border-left: 10px solid red;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.filter-footer {
+  display: block;
+  cursor: pointer;
+  /* height: 50px; */
+  padding: 9px 0px 10px 0px;
+  position: fixed;
+  bottom: 0;
+  width: 250px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "Segoe UI";
+  background: red;
+  color: #fff;
+  text-align: center;
+}

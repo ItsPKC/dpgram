@@ -1,0 +1,123 @@
+.asp-ads1 {
+  height: 100px;
+  width: calc(100%);
+  background-color: white;
+  margin: 20px 0px;
+  display: grid;
+  place-items: center;
+}
+
+.asp-content {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 10px;
+}
+.asp-heading {
+  color: white;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+
+.asp-box {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin: 40px 0px 30px 0px;
+}
+
+.asp-box-option {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+
+.asp-box-option > option {
+  font-size: 18px;
+  /* font-weight: 700; */
+  letter-spacing: 1px;
+}
+.asp-box-if {
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0px 10px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.asp-generate {
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 82.5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  /* background-color: rgb(255, 0, 0); */
+  background: linear-gradient(180deg, rgb(255, 0, 0), rgba(255, 0, 0, 0.8));
+  color: rgb(255, 255, 255);
+  border: 3px solid white;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0px 10px;
+}
+
+.asp-result {
+  min-height: 100px;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  place-items: center;
+  border-radius: 5px;
+}
+
+.asp-result-area {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: 2px;
+}
+
+.asp-result-button {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "a a"
+    "b c";
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.asp-result-button div {
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+/* ------------------------------------------ */
+.asp-helper {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0px;
+  border: 10px solid black;
+}

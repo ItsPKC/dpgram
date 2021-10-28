@@ -1,0 +1,102 @@
+.pb-item {
+  /*it's the div section contains a each single box of image and 
+      some text as headline & some description*/
+  height: auto;
+  width: 224px;
+  background-color: white;
+  border: 1px solid grey;
+  padding: 3px;
+  /*
+      box-shadow:   rgb(255,0,0,) 0px 0px 10px 2px;*/
+  font-family: "Segoe UI";
+  font-weight: 450;
+  text-align: left;
+  display: grid;
+  float: left;
+  border-radius: 3px;
+}
+
+.pb-content-icon {
+  /*image used for icon on the homepage as a icon of each block */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  /* margin-left: auto;
+      margin-right: auto; */
+  cursor: pointer;
+}
+
+.pb-block-title {
+  /*headline within the box*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0px 2px 2px 2px;
+  cursor: pointer;
+  outline: none;
+  border-style: none;
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.pb-block-title-detail {
+  font-family: "Segoe UI";
+  margin-bottom: 0px;
+  padding: 0px 4px 0px 3px;
+  margin-bottom: 3px;
+}
+
+/*to add effect on whole box*/
+/* .pb-item:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 10px;
+} */
+
+@media only screen and (max-width: 768.1px) {
+  @media only screen and (min-width: 600px) {
+    .pb-item {
+      /* IT WILL USE WHEN USING THIS IN GRID */
+      /* per card = 4*2 border*/
+      /* width: calc(100% - 8px); */
+
+      /* IT WILL USE WHILE USING IN HORIZONTAL SCROLLING */
+      /* It referenced from other to match the same look
+    6px - Outer Padding
+    10px - Left margin
+    7.5px - right Margin 
+    2*1 px - border */
+      width: calc(33.333vw - 6px - 10px - 7.5px - 2px);
+      /* vw is used to match width according to screen */
+    }
+  }
+}
+@media only screen and (max-width: 600.1px) {
+  .pb-item {
+    /* IT WILL USE WHEN USING THIS IN GRID */
+    /* per card = 4*2 border*/
+    /* width: calc(100% - 8px); */
+
+    /* IT WILL USE WHILE USING IN HORIZONTAL SCROLLING */
+    /* It referenced from other to match the same look
+    6px - Outer Padding
+    10px - Left margin/
+    7.5px - mid margin
+    2*1 px - border */
+    width: calc(50vw - 6px - 10px - 7.5px - 2px);
+    /* vw is used to match height according to screen */
+  }
+}

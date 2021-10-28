@@ -1,0 +1,125 @@
+.header {
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 998;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 1px 3px rgb(255, 255, 255);
+}
+
+.branding {
+  float: left;
+  display: flex;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.branding:hover {
+  background: red;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.logo {
+  height: 35px;
+  background-color: white;
+  margin: 7.5px 5px 7.5px 7.5px;
+  border-radius: 20px;
+  animation: logo-spin infinite 1s alternate linear;
+  /* cursor: pointer; */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+.trademark {
+  /* cursor: pointer; */
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  /* // 4px inbuilt text padding + 9px additional padding */
+  padding: 4px;
+  margin: 5px 10px 7px 10px;
+  border-radius: 20px;
+  font-family: "Segoe UI";
+}
+
+.nav-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  height: 50px;
+}
+
+.nav-button {
+  display: block;
+  /* background: linear-gradient(
+    270deg,
+    rgb(255, 255, 255) 0%,
+    rgb(0, 0, 0) 35%,
+    rgb(0, 0, 0) 65%,
+    rgb(255, 255, 255) 100%
+  ); */
+  /* width: 100px; */
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-family: "Segoe UI";
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  /* // 4px inbuilt text padding + 9px additional padding */
+  padding: 4px 15px;
+  margin: 10px 10px;
+  border-radius: 20px;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-button {
+  display: none;
+  float: right;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, 0.2);
+  font-weight: 900;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 2px;
+  /* // 4px inbuilt text padding + 9px additional padding */
+  padding: 0 0 0 1px;
+  margin: 7.25px 7.5px 6.75px 7.5px;
+  /* border-radius: 20px; */
+  /* border: 1px solid black; */
+  /* margin: 5px; */
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 767.9px) {
+  .trademark {
+    margin: 8.5px 10px 3.5px 10px;
+  }
+  .nav-button-group {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}

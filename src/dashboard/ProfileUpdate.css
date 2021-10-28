@@ -1,0 +1,57 @@
+.pu-edit-button {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  background-color: rgb(0, 0, 0, 0.1);
+  transform: rotateZ(90deg);
+}
+/* .pu-dp {
+  margin-top: 20px;
+} */
+.pu-bd {
+  background-color: white;
+  margin: 15px 0px;
+  padding: 0px 5px;
+}
+.pu-bd-name-username {
+  display: grid;
+  grid-template-columns: 120px auto 30px;
+  /* grid-template-rows: 30px; */
+  align-items: center;
+  padding: 15px 5px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+.pu-bd-about {
+  align-items: center;
+  padding: 15px 5px 10px 5px;
+  /* box-shadow: 0px 1px rgb(0,0,0,0.2), */
+  /* border-bottom: 1px solid rgb(0, 0, 0, 0.2); */
+  display: grid;
+  grid-template-areas:
+    "area1 area2"
+    "area3 area3";
+}
+
+.pu-cred {
+  background-color: white;
+  margin: 15px 0px;
+  padding: 0px 5px;
+}
+
+.pu-portfolio {
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin: 15px 0px;
+  padding: 0px 5px;
+}
+
+.pu-portfolio-data {
+  display: grid;
+  grid-template-columns: 50px auto 30px;
+  align-items: center;
+  padding: 10px 5px 15px 5px;
+}

@@ -1,0 +1,8 @@
++ firebase-functions@3.15.7
+added 11 packages from 38 contributors and audited 2038 packages in 47.567s
+
+155 packages are looking for funding
+  run `npm fund` for details
+
+found 27 vulnerabilities (8 moderate, 18 high, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
